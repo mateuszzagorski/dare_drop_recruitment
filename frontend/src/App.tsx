@@ -1,9 +1,9 @@
+import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import StreamerSubmissionForm from "./components/StreamerSubmissionForm/StreamerSubmissionForm";
 import StreamerList from "./components/StreamerList/StreamerList";
 import StreamerRecord from "./components/StreamerRecord/StreamerRecord";
+import StreamerSubmissionForm from "./components/StreamerSubmissionForm/StreamerSubmissionForm";
 import styles from "./App.module.css";
-import { useState } from "react";
 
 const CombinedComponents = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);

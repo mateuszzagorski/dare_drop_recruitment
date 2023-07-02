@@ -13,7 +13,7 @@ interface Streamer {
 
 const socket: Socket = io("http://localhost:3000/streamers");
 
-const StreamerList = ({ formSubmitted }) => {
+const StreamerList = ({ formSubmitted }: { formSubmitted: boolean }) => {
   const [streamers, setStreamers] = useState<Streamer[]>([]);
 
   useEffect(() => {

@@ -8,7 +8,7 @@ interface StreamerSubmission {
   description: string;
 }
 
-const StreamerSubmissionForm = ({ onSubmit }) => {
+const StreamerSubmissionForm = ({ onSubmit }: { onSubmit: () => void }) => {
   const [name, setName] = useState("");
   const [platform, setPlatform] = useState("");
   const [description, setDescription] = useState("");
