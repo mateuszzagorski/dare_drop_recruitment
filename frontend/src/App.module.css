@@ -1,0 +1,38 @@
+ @import '../node_modules/modern-normalize/modern-normalize.css';
+
+html, body {
+  height: 100%;
+}
+
+:root {
+  --first-color: #ececec;
+  --second-color: #9fd3c7;
+  --third-color: #385170;
+  --fourth-color: #142d4c;
+}
+
+.navList {
+  list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--fourth-color)
+}
+
+.navLink:hover {
+  color: var(--second-color);
+}
+
+.nav {
+  padding: 20px 15px;
+  background-color: var(--first-color);
+}
+
+.app {
+  background-image: url('assets/bg_logos.png');
+  min-height: 100%;
+}
+
